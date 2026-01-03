@@ -2,9 +2,14 @@ import Header from "@/components/Header";
 import StickyFooter from "@/components/StickyFooter";
 import QuoteBlock from "@/components/QuoteBlock";
 import CheckList from "@/components/CheckList";
+import { Button } from "@/components/ui/button";
 import speakerImage from "@/assets/speaker.jpg";
 import messyClosetImage from "@/assets/messy-closet.jpg";
-import beforeAfterImage from "@/assets/before-after.png";
+import brainComparisonImage from "@/assets/brain-comparison.png";
+import antes1Image from "@/assets/antes1.png";
+import depois1Image from "@/assets/depois1.png";
+import antes2Image from "@/assets/antes2.png";
+import depois2Image from "@/assets/depois2.png";
 
 const Index = () => {
   const checklistItems = [
@@ -78,6 +83,10 @@ const Index = () => {
             Segundo: Se isso soa familiar, você já percebeu que quanto mais tenta reagir, se organizar ou 'fazer dar certo', mais parece que afunda no próprio problema — junto com a culpa, a frustração e a sensação de incapacidade.
           </h2>
           
+          <p className="text-foreground leading-relaxed mb-4 text-center font-medium">
+            Seu guarda-roupas se parece com isso?
+          </p>
+
           <div className="section-card">
             <div className="rounded-lg overflow-hidden mb-3">
               <img 
@@ -99,6 +108,14 @@ const Index = () => {
 
         {/* Research Section */}
         <section className="mb-8">
+          <div className="rounded-xl overflow-hidden shadow-md mb-4">
+            <img 
+              src={brainComparisonImage} 
+              alt="Comparação entre cérebro normal e cérebro traumatizado" 
+              className="w-full h-auto object-cover"
+            />
+          </div>
+
           <p className="text-foreground leading-relaxed mb-4">
             Após 35 anos de pesquisa, posso te garantir: <strong>Sua Autossabotagem não é preguiça! É o seu sistema nervoso implorando por ajuda.</strong>
           </p>
@@ -125,7 +142,7 @@ const Index = () => {
           </p>
 
           <QuoteBlock>
-            "Uma e outra vez descreviam o mesmo: por fim podiam atuar. Por fim limpar. Por fim funcionar de formas que antes eram impossíveis. Se chama <strong>Recomeço Mental</strong>. Embora como neurocientista costumo ser cética com essas coisas, soube que devia investigar. E o que encontrei foi surpreendente. Recomeço Mental realmente te ajuda a entender quando teu cérebro se bloqueia."
+            "Muitos pacientes descreviam a mesma experiência: finalmente conseguiam realizar tarefas básicas sem se sobrecarregar, e também lidar com tarefas que antes pareciam impossíveis. Muitos elogiavam esse método chamado Recomeço Mental. Embora eu, como neurocientista, costume ser cética em relação a esse tipo de abordagem, sabia que precisava investigar. O que encontrei foi surpreendente: o Recomeço Mental realmente ajuda você a entender como — e em que momento — o seu cérebro se bloqueia."
           </QuoteBlock>
         </section>
 
@@ -153,15 +170,43 @@ const Index = () => {
         {/* Before/After Results Section */}
         <section className="mb-8">
           <p className="text-foreground leading-relaxed mb-4">
-            Testei com alguns dos meus pacientes, e nada voltou a ser igual.
+            Relatos e fotos de alguns dos meus pacientes. Depois desse processo, nada voltou a ser como antes.
           </p>
 
-          <div className="rounded-xl overflow-hidden shadow-md mb-3">
-            <img 
-              src={beforeAfterImage} 
-              alt="Antes e depois de uma usuária do Recomeço Mental" 
-              className="w-full h-auto object-cover"
-            />
+          {/* First pair of before/after */}
+          <div className="grid grid-cols-2 gap-2 mb-4">
+            <div className="rounded-lg overflow-hidden shadow-md">
+              <img 
+                src={antes1Image} 
+                alt="Antes - Armário desorganizado" 
+                className="w-full h-auto object-cover"
+              />
+            </div>
+            <div className="rounded-lg overflow-hidden shadow-md">
+              <img 
+                src={depois1Image} 
+                alt="Depois - Armário organizado" 
+                className="w-full h-auto object-cover"
+              />
+            </div>
+          </div>
+
+          {/* Second pair of before/after */}
+          <div className="grid grid-cols-2 gap-2 mb-4">
+            <div className="rounded-lg overflow-hidden shadow-md">
+              <img 
+                src={antes2Image} 
+                alt="Antes - Armário desorganizado" 
+                className="w-full h-auto object-cover"
+              />
+            </div>
+            <div className="rounded-lg overflow-hidden shadow-md">
+              <img 
+                src={depois2Image} 
+                alt="Depois - Armário organizado" 
+                className="w-full h-auto object-cover"
+              />
+            </div>
           </div>
           
           <p className="text-xs text-muted-foreground text-center italic mb-6">
@@ -169,7 +214,7 @@ const Index = () => {
           </p>
 
           <p className="text-foreground leading-relaxed">
-            Só leva alguns minutos por dia. Recomeço Mental não só ajuda a limpar sua casa, devolve suas vidas.
+            Só leva alguns minutos por dia. Recomeço Mental não só ajuda a limpar sua casa, devolve sua vida.
           </p>
         </section>
 
@@ -181,6 +226,9 @@ const Index = () => {
           <p className="text-muted-foreground mb-6">
             Faça o teste gratuito: Descubra um plano simples e personalizado para te ajudar a combater a bagunça e voltar a sentir paz em seu lar.
           </p>
+          <Button className="w-full py-6 text-lg font-semibold">
+            Faça o Teste Grátis
+          </Button>
         </section>
       </main>
 
