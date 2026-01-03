@@ -10,6 +10,9 @@ import antes1Image from "@/assets/antes1.png";
 import depois1Image from "@/assets/depois1.png";
 import antes2Image from "@/assets/antes2.png";
 import depois2Image from "@/assets/depois2.png";
+import relato1Image from "@/assets/relato1.png";
+import relato2Image from "@/assets/relato2.png";
+import relato3Image from "@/assets/relato3.png";
 
 const Index = () => {
   const checklistItems = [
@@ -169,9 +172,34 @@ const Index = () => {
 
         {/* Before/After Results Section */}
         <section className="mb-8">
-          <p className="text-foreground leading-relaxed mb-4">
+          <p className="text-lg font-bold text-foreground leading-relaxed mb-6">
             Relatos e fotos de alguns dos meus pacientes. Depois desse processo, nada voltou a ser como antes.
           </p>
+
+          {/* Testimonial Screenshots */}
+          <div className="space-y-4 mb-6">
+            <div className="rounded-xl overflow-hidden shadow-md">
+              <img 
+                src={relato1Image} 
+                alt="Relato da Marcela sobre o Recomeço Mental" 
+                className="w-full h-auto object-cover"
+              />
+            </div>
+            <div className="rounded-xl overflow-hidden shadow-md">
+              <img 
+                src={relato2Image} 
+                alt="Relato da Carla sobre o Recomeço Mental" 
+                className="w-full h-auto object-cover"
+              />
+            </div>
+            <div className="rounded-xl overflow-hidden shadow-md">
+              <img 
+                src={relato3Image} 
+                alt="Relato do Marcio sobre o Recomeço Mental" 
+                className="w-full h-auto object-cover"
+              />
+            </div>
+          </div>
 
           {/* First pair of before/after */}
           <div className="grid grid-cols-2 gap-2 mb-4">
