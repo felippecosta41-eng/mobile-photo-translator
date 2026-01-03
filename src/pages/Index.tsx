@@ -4,14 +4,15 @@ import QuoteBlock from "@/components/QuoteBlock";
 import CheckList from "@/components/CheckList";
 import speakerImage from "@/assets/speaker.jpg";
 import messyClosetImage from "@/assets/messy-closet.jpg";
+import beforeAfterImage from "@/assets/before-after.png";
 
 const Index = () => {
   const checklistItems = [
-    "Você bloqueia ao ver a bagunça e não sabe por onde começar",
+    "Diante a uma casa bagunçada ou tarefas simples do dia a dia. Você não sabe por onde começar?",
     "Você se sente esgotada(o) mesmo antes de começar",
-    "Talvez consiga começar a limpar, mas apenas se houver uma crise",
-    "Não consegue priorizar porque cada objeto parece igual de urgente",
-    "Você senta 'só um minuto' e desaparecem três horas",
+    "Talvez consiga começar a limpar, mas apenas se estiver extremamente empolgado",
+    "Não consegue priorizar uma única atividade, porque todas parecem igualmente urgentes.",
+    "Você se senta 'só por um minuto'… e, quando percebe, já se passaram 3 horas.",
   ];
 
   return (
@@ -23,11 +24,11 @@ const Index = () => {
         {/* Hero Section */}
         <section className="mb-8">
           <h1 className="text-2xl font-bold leading-tight mb-4 text-foreground">
-            Notícias de última hora: Neurocientista revela por que você não consegue limpar sua casa
+            Notícia de última hora: Neurocientista revela por que você não consegue fazer tarefas básicas de casa.
           </h1>
           
           <p className="text-muted-foreground mb-6 italic">
-            (E o truque viral que fez mais de 450.000 aposentados nos EUA ficarem obcecados com a organização)
+            (Esse método fez mais de 450.000 pessoas nos EUA transformarem suas próprias vidas, desenvolvendo Foco, Disciplina e Clareza Mental. Elas recuperaram o controle da mente e passaram a vencer desde tarefas Simples até desafios que antes pareciam Impossíveis.)
           </p>
 
           <div className="rounded-xl overflow-hidden shadow-md mb-3">
@@ -45,35 +46,39 @@ const Index = () => {
         {/* Introduction */}
         <section className="mb-8">
           <p className="text-foreground leading-relaxed mb-4">
-            Se a bagunça da sua casa continua crescendo, não importa o que você faça. Se você parou de convidar pessoas para casa por causa da bagunça. Ou se continua dizendo <strong>"Amanhã eu limpo"</strong>, mas esse amanhã nunca chega...
+            Se você não consegue nem limpar a própria casa, não consegue jogar o lixo fora, não consegue sequer levantar da cama…
+          </p>
+          
+          <p className="text-foreground leading-relaxed mb-4">
+            Você vive dizendo <strong>"amanhã eu limpo, amanhã eu faço, amanhã eu começo"</strong> — Mas esse amanhã nunca chega...
+          </p>
+
+          <p className="text-foreground leading-relaxed mb-4">
+            E, a cada dia que passa, a culpa aumenta, a autoestima diminui e a sensação de estar falhando com você mesmo só cresce.
           </p>
 
           <QuoteBlock>
-            "Há duas coisas que você precisa saber agora mesmo..." diz a Dra. Sam Parker, neurocientista que passou décadas pesquisando por que alguns cérebros não deixam as pessoas fazerem tarefas cotidianas básicas, mesmo que estejam afogadas em vergonha.
+            "Há duas coisas que você precisa saber agora mesmo..." diz a Dra. Sam Parker, neurocientista que passou décadas pesquisando por que alguns cérebros não deixam as pessoas fazerem tarefas cotidianas básicas, mesmo que estejam completamente envergonhados.
           </QuoteBlock>
         </section>
 
         {/* First Point */}
         <section className="mb-8">
           <h2 className="text-xl font-bold mb-4 text-foreground">
-            Primeiro: Você não está sozinha. Muito pelo contrário.
+            Primeiro: Você não está sozinho(a). Muito pelo contrário.
           </h2>
           <p className="text-foreground leading-relaxed">
-            Milhões de mulheres (e homens) em todo o país estão paralisados pela mesma incapacidade de agir e estão sofrendo em silêncio. (Especialmente quem já entrou na aposentadoria).
+            Milhões de mulheres (e homens) em todo o país estão paralisados pela mesma incapacidade de agir e estão sofrendo em silêncio. (Especialmente se você se compara constantemente.)
           </p>
         </section>
 
         {/* Second Point */}
         <section className="mb-8">
           <h2 className="text-xl font-bold mb-4 text-foreground">
-            Segundo: Se isso soa familiar, quanto mais você tenta limpar, mais você se afunda no problema.
+            Segundo: Se isso soa familiar, você já percebeu que quanto mais tenta reagir, se organizar ou 'fazer dar certo', mais parece que afunda no próprio problema — junto com a culpa, a frustração e a sensação de incapacidade.
           </h2>
           
           <div className="section-card">
-            <p className="font-semibold text-foreground mb-4">
-              Se isso soa familiar, quanto mais você tenta limpar, mais você se afunda no problema.
-            </p>
-            
             <div className="rounded-lg overflow-hidden mb-3">
               <img 
                 src={messyClosetImage} 
@@ -81,14 +86,10 @@ const Index = () => {
                 className="w-full h-auto object-cover"
               />
             </div>
-
-            <QuoteBlock>
-              "A segunda coisa que você precisa saber é essa," continua a Dra. Parker. "Se você quer finalmente eliminar a desordem que está te sufocando..."
-            </QuoteBlock>
           </div>
 
           <p className="text-sm text-muted-foreground text-center italic my-6">
-            O ciclo da bagunça pode parecer impossível de quebrar.
+            O ciclo da autossabotagem pode parecer impossível de quebrar.
           </p>
 
           <p className="text-foreground leading-relaxed">
@@ -99,11 +100,11 @@ const Index = () => {
         {/* Research Section */}
         <section className="mb-8">
           <p className="text-foreground leading-relaxed mb-4">
-            Após 35 anos de pesquisa, finalmente posso dizer com certeza uma coisa: <strong>Sua bagunça não é preguiça. É seu sistema nervoso gritando por ajuda.</strong>
+            Após 35 anos de pesquisa, posso te garantir: <strong>Sua Autossabotagem não é preguiça! É o seu sistema nervoso implorando por ajuda.</strong>
           </p>
           
           <p className="text-foreground leading-relaxed mb-4">
-            Isso é especialmente grave em pessoas que sofreram abusos prolongados, negligência, ou o que agora começamos a chamar de Trauma Complexo ou CPTSD. E é mais comum do que as pessoas pensam.
+            Isso é especialmente grave em pessoas que sofreram abusos prolongados, negligência, ou o que agora começamos a chamar de Transtorno de Estresse Pós-Traumático Complexo TEPT (C-PTSD). E é muito mais comum do que as pessoas pensam.
           </p>
 
           <CheckList items={checklistItems} />
@@ -112,19 +113,19 @@ const Index = () => {
         {/* Solution Section */}
         <section className="mb-8">
           <h2 className="text-xl font-bold mb-4 text-foreground">
-            Este novo "enfoque do sistema nervoso" para limpar muda tudo.
+            Este novo "método centrado no sistema nervoso" muda tudo.
           </h2>
           
           <p className="text-foreground leading-relaxed mb-4">
-            Eu ouvi pela primeira vez em uma notícia — pessoas contando como lhes ajudou finalmente a fazer coisas em que estavam bloqueadas há anos.
+            Eu ouvi pela primeira vez em uma notícia — pessoas contando como lhes ajudou finalmente a fazer coisas básicas que não faziam há anos.
           </p>
 
           <p className="text-foreground leading-relaxed mb-4">
-            Chama-se <strong>MellowFlow</strong>. Funciona com seu sistema nervoso em vez de contra ele. Isso é o que o torna tão poderoso.
+            Chama-se <strong>Recomeço Mental</strong>. Ele trabalha com o seu sistema nervoso — e não contra ele. É isso que o torna tão poderoso.
           </p>
 
           <QuoteBlock>
-            "Uma e outra vez descreviam o mesmo: por fim podiam atuar. Por fim limpar. Por fim funcionar de formas que antes eram impossíveis. Se chama <strong>MellowFlow</strong>. Embora como neurocientista costumo ser cética com essas coisas, soube que devia investigar. E o que encontrei foi surpreendente. MellowFlow realmente te ajuda a entender quando teu cérebro se bloqueia."
+            "Uma e outra vez descreviam o mesmo: por fim podiam atuar. Por fim limpar. Por fim funcionar de formas que antes eram impossíveis. Se chama <strong>Recomeço Mental</strong>. Embora como neurocientista costumo ser cética com essas coisas, soube que devia investigar. E o que encontrei foi surpreendente. Recomeço Mental realmente te ajuda a entender quando teu cérebro se bloqueia."
           </QuoteBlock>
         </section>
 
@@ -137,15 +138,48 @@ const Index = () => {
           <div className="section-card">
             <h3 className="font-semibold text-lg mb-4 text-foreground">Como Funciona</h3>
             <p className="text-foreground leading-relaxed mb-4">
-              Começa com um teste gratuito de 3 minutos que identifica a razão exata pela qual seu sistema nervoso não te deixa limpar.
+              Começa com algumas perguntas que identificam a razão exata pela qual seu sistema nervoso não para de te Sabotar.
             </p>
             <p className="text-foreground leading-relaxed">
-              Quando termina o teste, não pedem que limpe toda sua cozinha. Em vez disso, pedem que dobre uma única camiseta — e te guiam através de exercícios específicos para seu tipo de bloqueio.
+              Quando termina o teste, Ele não pede que você limpe toda sua casa ou que comece na mesma hora a praticar alguma atividade fisica. Em vez disso, pedem que dobre uma única camiseta, tarefas básicas — e te guiam através de atividades e exercícios específicos para seu tipo de bloqueio.
             </p>
           </div>
 
           <p className="text-sm text-muted-foreground text-center italic my-6">
-            Milhares de pessoas estão recuperando o controle de suas casas.
+            Milhares de pessoas estão recuperando o controle de suas vidas.
+          </p>
+        </section>
+
+        {/* Before/After Results Section */}
+        <section className="mb-8">
+          <p className="text-foreground leading-relaxed mb-4">
+            Testei com alguns dos meus pacientes, e nada voltou a ser igual.
+          </p>
+
+          <div className="rounded-xl overflow-hidden shadow-md mb-3">
+            <img 
+              src={beforeAfterImage} 
+              alt="Antes e depois de uma usuária do Recomeço Mental" 
+              className="w-full h-auto object-cover"
+            />
+          </div>
+          
+          <p className="text-xs text-muted-foreground text-center italic mb-6">
+            Resultados reais de usuários do Recomeço Mental.
+          </p>
+
+          <p className="text-foreground leading-relaxed">
+            Só leva alguns minutos por dia. Recomeço Mental não só ajuda a limpar sua casa, devolve suas vidas.
+          </p>
+        </section>
+
+        {/* Final CTA Section */}
+        <section className="mb-8 text-center">
+          <h2 className="text-2xl font-bold mb-4 text-foreground">
+            Não fique só com minhas palavras, prove você mesma(o).
+          </h2>
+          <p className="text-muted-foreground mb-6">
+            Faça o teste gratuito: Descubra um plano simples e personalizado para te ajudar a combater a bagunça e voltar a sentir paz em seu lar.
           </p>
         </section>
       </main>
